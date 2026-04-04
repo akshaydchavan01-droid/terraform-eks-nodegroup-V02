@@ -1,0 +1,11 @@
+aws_region         = "ap-south-1"
+vpc_id             = "vpc-0c50d3f2e9b20a210"
+cluster_name       = "ankit-cluster"
+cluster_subnet_ids = ["subnet-xxxxxxxx", "subnet-yyyyyyyy"]
+node_subnet_ids    = ["subnet-xxxxxxxx", "subnet-yyyyyyyy"]
+node_group_name    = "pc-node-group-v01"
+instance_types     = ["t3.small"]
+desired_size       = 2
+min_size           = 1
+max_size           = 6
+environment        = "dev"
