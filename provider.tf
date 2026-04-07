@@ -9,10 +9,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "replace-with-your-terraform-state-bucket"
-    key            = "eks/terraform.tfstate"
+    bucket         = "our-terraform-tfstate-file-bucket-6150"
+    key            = "Server-terraform"
     region         = "ap-south-1"
-    dynamodb_table = "replace-with-your-lock-table"
+    dynamodb_table = "my-dynamo-db-practice-1"
     encrypt        = true
   }
 }
