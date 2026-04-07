@@ -16,7 +16,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/akshaydchavan01-droid/terraform-eks-nodegroup.git'
+                git 'https://github.com/akshaydchavan01-droid/terraform-eks-nodegroup-V02.git'
             }
         }
 
@@ -26,8 +26,10 @@ pipeline {
             }
         }
 
-        stage('Terraform Format Check') {
+        // ✅ ADD THIS STAGE HERE
+        stage('Terraform Format') {
             steps {
+                sh 'terraform fmt -recursive'
                 sh 'terraform fmt -check'
             }
         }
