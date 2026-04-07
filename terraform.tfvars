@@ -1,6 +1,6 @@
 aws_region         = "ap-south-1"
 vpc_id             = "vpc-00887f6a66fb38e82"
-cluster_name       = "akshay-cluster-v01"
+cluster_name       = "akshay_cluster_v01"
 cluster_subnet_ids = ["subnet-014d42d39b86f6d54", "subnet-017fae3167f441b75"]
 node_subnet_ids    = ["subnet-014d42d39b86f6d54", "subnet-017fae3167f441b75"]
 node_group_name    = "pc-node-group-v01"
